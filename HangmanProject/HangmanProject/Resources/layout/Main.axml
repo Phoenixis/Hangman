@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="_ _ _ _ _ _"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/txtHangman"
+        android:textSize="22dp" />
+    <TextView
+        android:text="Answer:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAnswer"
+        android:textSize="18dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="43.0dp"
+        android:id="@+id/txtLetter"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Type a letter of the alphabet:"
+        android:textSize="16dp"
+        android:maxLength="1" />
+    <Button
+        android:text="Submit Letter"
+        android:layout_width="145.0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLetter"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+    <TextView
+        android:text="Can you save the hangman?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="24.5dp"
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtWord"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="Type the mystery word to solve the puzzle and free the hangman!"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:text="Submit Word"
+        android:layout_width="140.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWord"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="56.0dp"
+        android:id="@+id/txtLetsdone"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:id="@+id/linearLayout1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:text="New Game"
+            android:layout_width="93.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnNew"
+            android:layout_marginLeft="15dp"
+            android:textSize="14dp"
+            android:layout_marginRight="15dp" />
+        <Button
+            android:text="Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMenu" />
+    </LinearLayout>
+    <TextView
+        android:text="Current Score: 0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtScoreGame"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="Lives Left: 8"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLives" />
+</LinearLayout>
